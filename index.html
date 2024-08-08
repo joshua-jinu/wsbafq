@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v2.8.0</title>
+
+  <!-- <link rel="shortcut icon" type="image/png" href="jasmine/jasmine-2.8.0/face.png"> -->
+  <link rel="stylesheet" href="jasmine/jasmine-2.8.0/jasmine.css">
+  <link rel="stylesheet" href="main.css">
+
+  <script src="jasmine/jasmine-2.8.0/jasmine.js"></script>
+  <script src="jasmine/jasmine-2.8.0/jasmine-html.js"></script>
+  <script src="jasmine/jasmine-2.8.0/boot.js"></script>
+
+  <!-- include source files here... -->
+  <script type="text/javascript" src="link.js"></script>
+<script type="text/javascript" src="data.js"></script>
+<script src="src/app.js"></script>
+
+  <!-- include spec files here... -->
+  <script src="tests/FunctionsTest.js"></script>
+
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <h1 style="color:red ;">KPL</h1>
+    <img src="https://raw.githubusercontent.com/Kalvium-Program/lab-kalvium-premier-league-solution/7d91f77cd1447ddf208b666625f652de9488349a/src/assets/dreamteam.svg" class="DREAMTEAM">
+</nav>
+<section class="manager-details">
+    <div class="Rectangle">
+        <p class="title">MANAGER'S PROFILE </p>
+        <div class="grid-container">
+            <div>
+                <p class="subtitle">NAME</p>
+                <p class="insidetext">MANAGER NAME</p>
+            </div>
+            <div>
+                <p class="subtitle">AGE</p>
+                <p class="insidetext">AGE</p>
+            </div>
+            <div>
+                <p class="subtitle">TEAM NAME</p>
+                <p class="insidetext">TEAM NAME</p>
+            </div>
+            <div>
+                <p class="subtitle">TROPHIES</p>
+                <p class="insidetext">NUMBER OF TROPHIES</p>
+            </div>
+        </div>
+    </div>
+    <div class="Rectangle">
+        <p class="title">FORMATION</p>
+        <div class="formation-container">
+            <img src="https://raw.githubusercontent.com/Kalvium-Program/lab-kalvium-premier-league-solution/7d91f77cd1447ddf208b666625f652de9488349a/src/assets/group-5.svg" class="playground">
+            <img src="https://raw.githubusercontent.com/Kalvium-Program/lab-kalvium-premier-league-solution/7d91f77cd1447ddf208b666625f652de9488349a/src/assets/goalkeeper.svg" alt="player" class="goalkeeper">
+            <div class="player-container defence">
+            </div>
+            <div class="player-container midfield">
+            </div>
+            <div class="player-container forward">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Rectangle squad">
+    <div class="title-container" id="type-of-filter">
+        <p class="title">SQUAD</p>
+        <div class="filter-container">
+            <p class="subtitle"><i class="fas fa-filter"></i><span> APPLY
+                    FILTERS</span>
+            </p>
+        </div>
+    </div>
+    <div class="title-container" id="filter-type">
+        <div class="dropdown">
+            <p class="subtitle non-bold">Debut Year <span id="debutflag"></span> <img src="https://raw.githubusercontent.com/Kalvium-Program/lab-kalvium-premier-league-solution/7d91f77cd1447ddf208b666625f652de9488349a/src/assets/down-arrow.svg"
+                    alt="down">
+                <div class="dropdown-list" id="dropdown-debut">
+                </div>
+            </p>
+        </div>
+
+        <div class="dropdown">
+            <p class="subtitle non-bold">Position <span id="positionflag"></span> <img src="https://raw.githubusercontent.com/Kalvium-Program/lab-kalvium-premier-league-solution/7d91f77cd1447ddf208b666625f652de9488349a/src/assets/down-arrow.svg"
+                    alt="down">
+                <div class="dropdown-list" id="dropdown-position">
+                </div>
+            </p>
+        </div>
+
+        <div class="dropdown">
+            <p class="subtitle non-bold">Team <span id="teamflag"></span><img src="https://raw.githubusercontent.com/Kalvium-Program/lab-kalvium-premier-league-solution/7d91f77cd1447ddf208b666625f652de9488349a/src/assets/down-arrow.svg"
+                    alt="down"></p>
+            <div class="dropdown-list" id="dropdown-team">
+            </div>
+        </div>
+
+        <p class="subtitle non-bold team-selected">Younger than <input type="text" class="inputText" id="age">
+        </p>
+
+        <p class="subtitle non-bold team-selected">No. of Awards <input type="text" class="inputText"
+                id="awardCountTotal"></p>
+
+        <div class="goButton team-selected" id="goButton">Go</div>
+
+        <div class="dropdown">
+            <p class="subtitle non-bold">Award <span id="awardflag"></span> <img src="https://raw.githubusercontent.com/Kalvium-Program/lab-kalvium-premier-league-solution/7d91f77cd1447ddf208b666625f652de9488349a/src/assets/down-arrow.svg"
+                    alt="down">
+                <div class="dropdown-list" id="dropdown-award">
+                </div>
+            </p>
+        </div>
+
+        <div class="dropdown">
+            <p class="subtitle non-bold award-selected">Country <img src="https://raw.githubusercontent.com/Kalvium-Program/lab-kalvium-premier-league-solution/7d91f77cd1447ddf208b666625f652de9488349a/src/assets/down-arrow.svg" alt="down"></p>
+            <div class="dropdown-list" id="dropdown-country">
+            </div>
+        </div>
+
+        <p class="subtitle non-bold award-selected">No. of Awards <input type="text" class="inputText"
+                id="awardCount"></p>
+
+    </div>
+    <div id="player-container">
+
+    </div>
+</section>
+
+</body>
+
+</html>
